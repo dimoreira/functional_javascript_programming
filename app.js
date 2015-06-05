@@ -100,7 +100,8 @@ $(document).ready(function() {
 		setGraphData(processData(dataResponse));
 	}
 
-	var apikey = '5571b9af02e1140305e57a08';
+	/* Request one at http://api.crisis.net/ */
+	var apikey = '';
 	var dataRequest = $.get('http://api.crisis.net/item?limit=100&apikey=' + apikey);
 
 	dataRequest.done( updateGraph );
